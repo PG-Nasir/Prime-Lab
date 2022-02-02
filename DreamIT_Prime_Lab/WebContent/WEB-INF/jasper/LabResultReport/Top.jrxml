@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2ac62c95-fe52-453b-a9ad-1e7625d9d666">
+	<property name="ireport.zoom" value="1.0000000000000013"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="doctorl1" class="java.lang.String"/>
+	<parameter name="doctorl2" class="java.lang.String"/>
+	<parameter name="doctorl3" class="java.lang.String"/>
+	<parameter name="doctorl4" class="java.lang.String"/>
+	<parameter name="doctorl5" class="java.lang.String"/>
+	<parameter name="doctorl6" class="java.lang.String"/>
+	<parameter name="doctorl7" class="java.lang.String"/>
+	<parameter name="doctorl8" class="java.lang.String"/>
+	<parameter name="inchargel1" class="java.lang.String"/>
+	<parameter name="inchargel2" class="java.lang.String"/>
+	<parameter name="inchargel3" class="java.lang.String"/>
+	<parameter name="inchargel4" class="java.lang.String"/>
+	<parameter name="inchargel5" class="java.lang.String"/>
+	<parameter name="inchargel6" class="java.lang.String"/>
+	<parameter name="inchargel7" class="java.lang.String"/>
+	<parameter name="inchargel8" class="java.lang.String"/>
+	<parameter name="doctorl_b1" class="java.lang.String"/>
+	<parameter name="doctorl_b2" class="java.lang.String"/>
+	<parameter name="doctorl_b3" class="java.lang.String"/>
+	<parameter name="doctorl_b4" class="java.lang.String"/>
+	<parameter name="doctorl_b5" class="java.lang.String"/>
+	<parameter name="testNameList" class="java.lang.String"/>
+	<field name="LabNo" class="java.lang.String"/>
+	<field name="PatientName" class="java.lang.String"/>
+	<field name="Age" class="java.lang.String"/>
+	<field name="Gender" class="java.lang.String"/>
+	<field name="OrderDate" class="java.lang.String"/>
+	<field name="ReportingDate" class="java.lang.String"/>
+	<field name="MainTestName" class="java.lang.String"/>
+	<field name="Sample" class="java.lang.String"/>
+	<field name="Consultant" class="java.lang.String"/>
+	<field name="Degree" class="java.lang.String"/>
+	<field name="TestName" class="java.lang.String"/>
+	<field name="Result" class="java.lang.String"/>
+	<field name="NormalRange" class="java.lang.String"/>
+	<field name="TestList" class="java.lang.String"/>
+	<field name="Flag" class="java.lang.String"/>
+	<field name="LabIncharge" class="java.lang.String"/>
+	<field name="CheckedBy" class="java.lang.String"/>
+	<field name="LabInchargeDegree" class="java.lang.String"/>
+	<field name="CheckedByDegree" class="java.lang.String"/>
+	<field name="DoctorName1" class="java.lang.String"/>
+	<field name="DoctorName1Degree" class="java.lang.String"/>
+	<field name="DoctorName2" class="java.lang.String"/>
+	<field name="DoctorName2Degree" class="java.lang.String"/>
+	<field name="argomenti" class="java.lang.String"/>
+	<field name="Unit" class="java.lang.String"/>
+	<field name="Note" class="java.lang.String"/>
+	<field name="sampleCollect" class="java.lang.String"/>
+	<field name="sampleReceived" class="java.lang.String"/>
+	<variable name="variable1" class="java.lang.String">
+		<variableExpression><![CDATA[]]></variableExpression>
+		<initialValueExpression><![CDATA[]]></initialValueExpression>
+	</variable>
+	<variable name="Text" class="java.lang.String">
+		<variableExpression><![CDATA["Nasir\nUddin"]]></variableExpression>
+		<initialValueExpression><![CDATA[]]></initialValueExpression>
+	</variable>
+	<background>
+		<band height="802" splitType="Stretch">
+			<componentElement>
+				<reportElement x="-17" y="262" width="15" height="262" uuid="d7be8fe6-4e59-4c93-be58-28b5aa1e99ca"/>
+				<jr:Code39 xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" orientation="90" textPosition="none">
+					<jr:codeExpression><![CDATA[]]></jr:codeExpression>
+				</jr:Code39>
+			</componentElement>
+		</band>
+	</background>
+	<title>
+		<band height="217" splitType="Stretch">
+			<componentElement>
+				<reportElement x="418" y="89" width="150" height="15" uuid="cd147615-2f8f-4862-a826-cfb070e9e4df"/>
+				<jr:Code39 xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" textPosition="none">
+					<jr:codeExpression><![CDATA[$F{LabNo}]]></jr:codeExpression>
+				</jr:Code39>
+			</componentElement>
+			<rectangle>
+				<reportElement x="9" y="106" width="540" height="65" uuid="b94a94d2-a763-453d-9db6-b812b2f97cd4"/>
+				<graphicElement>
+					<pen lineWidth="0.75" lineStyle="Dotted"/>
+				</graphicElement>
+			</rectangle>
+			<frame>
+				<reportElement mode="Transparent" x="18" y="108" width="542" height="63" uuid="b8b78133-8d0a-448e-ad47-c1cc3e60e5a0"/>
+				<frame>
+					<reportElement positionType="Float" x="0" y="33" width="541" height="29" uuid="5b757e82-69f4-4bef-b138-07f85e552a14"/>
+					<staticText>
+						<reportElement x="72" y="1" width="5" height="14" uuid="0290fe87-31af-416e-bcda-f086b53443d0"/>
+						<textElement>
+							<font fontName="Calibri" size="9" isBold="false"/>
+						</textElement>
+						<text><![CDATA[:]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="0" y="1" width="72" height="14" uuid="1abe9929-54be-4286-b817-affd0776b2ce"/>
+						<textElement>
+							<font fontName="Calibri" size="9" isBold="false"/>
+						</textElement>
+						<text><![CDATA[Reffered By]]></text>
+					</staticText>
+					<textField isBlankWhenNull="true">
+						<reportElement x="77" y="1" width="454" height="14" uuid="cc13272e-c5d1-44c2-bd45-abc9a4d05d9f"/>
+						<textElement>
+							<font fontName="Calibri" isBold="true"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{Consultant}]]></textFieldExpression>
+					</textField>
+					<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+						<reportElement x="77" y="13" width="454" height="14" uuid="4f3293d0-0230-4c93-9d50-92db3c178bb4"/>
+						<textElement>
+							<font fontName="Calibri" size="9" isBold="false"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{Degree}.replace( '#', '\n' ).trim()]]></textFieldExpression>
+					</textField>
+				</frame>
+				<staticText>
+					<reportElement x="72" y="16" width="5" height="14" uuid="58bcfe39-e37e-4b7f-9abf-92b32b8c4bac"/>
+					<textElement>
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="405" y="16" width="34" height="14" uuid="75b3519e-b9dd-4adc-8286-0a9920f34c3f"/>
+					<textElement textAlignment="Right">
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Gender]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="449" y="16" width="67" height="14" uuid="8ad4ef1b-71d6-4ae2-8bc9-80c316aa7881"/>
+					<textElement>
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{Gender}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="442" y="15" width="5" height="14" uuid="1e113d9c-3e1a-4cd8-b879-47e9482b1f42"/>
+					<textElement>
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="314" y="16" width="36" height="14" uuid="c70a4d34-32ff-415b-944d-ed0c742c6e2b"/>
+					<textElement>
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{Age}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="308" y="16" width="4" height="14" uuid="9277bd7d-9ec1-4a14-a5dd-349f84af52d1"/>
+					<textElement>
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="284" y="16" width="22" height="14" uuid="e7b61323-8254-45ce-b5e3-e142eb31d8b7"/>
+					<textElement textAlignment="Right">
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Age]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="16" width="72" height="14" uuid="f827ea08-c3f8-42d9-b711-7058b00b5720"/>
+					<textElement>
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Patient Name]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="79" y="16" width="201" height="14" uuid="e71052c6-be07-4d45-8e86-174f68d155bb"/>
+					<textElement>
+						<font fontName="Calibri" size="10" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{PatientName}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="1" width="72" height="14" uuid="73d7f0b0-1da6-4a1c-914f-c6dc5be1a6af"/>
+					<textElement>
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Lab No]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="72" y="1" width="5" height="14" uuid="61abe776-051d-4fe6-b26b-edb0270ce6e2"/>
+					<textElement>
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="382" y="1" width="57" height="14" uuid="16a9d4eb-966b-4691-9137-b3a2d08462ea"/>
+					<textElement textAlignment="Right">
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Reporting Date]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="449" y="1" width="93" height="14" uuid="3f2bfde2-bacf-4744-a440-d916971cb1f1"/>
+					<textElement>
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{ReportingDate}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="442" y="1" width="5" height="14" uuid="a1381f4f-ed20-41f1-955d-3c6858085311"/>
+					<textElement>
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="79" y="1" width="139" height="14" uuid="afa0f0df-0ecf-4408-9a79-4cf4fa8f083a"/>
+					<textElement>
+						<font fontName="Calibri" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LabNo}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="314" y="1" width="61" height="14" uuid="addc4e72-6f36-4b8f-8e3b-a9b53bafc60a"/>
+					<textElement>
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{OrderDate}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="308" y="1" width="5" height="14" uuid="a31b3556-9599-4475-96f1-2e06c8d63b5b"/>
+					<textElement>
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="262" y="1" width="44" height="14" uuid="26a2b028-073a-42a7-9a84-8d9a3f27674c"/>
+					<textElement textAlignment="Right">
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Order Date]]></text>
+				</staticText>
+			</frame>
+			<componentElement>
+				<reportElement x="10" y="89" width="150" height="15" uuid="4a988171-e278-41d4-b49f-9aa5b7b8ad01"/>
+				<jr:Code39 xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" textPosition="none">
+					<jr:codeExpression><![CDATA[$F{LabNo}]]></jr:codeExpression>
+				</jr:Code39>
+			</componentElement>
+			<rectangle>
+				<reportElement x="9" y="178" width="539" height="14" uuid="79230a55-49bb-480f-888d-e2e9210eee61"/>
+				<graphicElement>
+					<pen lineWidth="0.75" lineStyle="Dotted"/>
+				</graphicElement>
+			</rectangle>
+			<frame>
+				<reportElement x="18" y="179" width="530" height="14" uuid="8349a91c-a04e-470b-ae66-e98873813076"/>
+				<textField isBlankWhenNull="true">
+					<reportElement x="40" y="0" width="347" height="14" uuid="a5bdb00b-1391-4367-a32f-72d9d8284ca7"/>
+					<textElement verticalAlignment="Top">
+						<font fontName="Calibri" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{testNameList}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="0" width="34" height="14" uuid="5f93b6b7-395d-40a7-9af7-b4203c91dacd"/>
+					<box leftPadding="2"/>
+					<textElement verticalAlignment="Top">
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Tests]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="34" y="0" width="5" height="14" uuid="fd95a7da-9360-4bb9-8003-a3cdacfd9406"/>
+					<textElement verticalAlignment="Top">
+						<font size="9" isBold="true"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="23" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="190" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="373" y="82" width="164" height="15" uuid="a24e26ed-2497-43d4-93fc-312e96f6601c"/>
+				<textElement>
+					<font fontName="Times New Roman" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{doctorl_b2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="70" width="65" height="14" uuid="456efbc0-790b-4ebc-ab68-59dbb56b3361">
+					<printWhenExpression><![CDATA[false]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Checked By]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="373" y="106" width="164" height="15" uuid="208e1c36-08d3-4ec9-a498-9c8ffab8b478"/>
+				<textElement>
+					<font fontName="Times New Roman" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{doctorl_b4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="83" width="65" height="14" uuid="552c124e-c1f7-4fa1-9878-80bba6fb3cff">
+					<printWhenExpression><![CDATA[false]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Lab Incharge]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="161" y="93" width="164" height="15" uuid="33566350-2b7f-47a4-abc0-3877dbc6fd8f"/>
+				<textElement>
+					<font fontName="Times New Roman" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{doctorl3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="161" y="105" width="164" height="15" uuid="aa5127dd-7260-4738-81b3-bf68158e7ad9"/>
+				<textElement>
+					<font fontName="Times New Roman" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{doctorl4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="373" y="94" width="164" height="15" uuid="28b8f5c1-e4c2-4f61-919f-ad2f657c3087"/>
+				<textElement>
+					<font fontName="Times New Roman" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{doctorl_b3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="161" y="117" width="164" height="15" uuid="29a82cd3-9e0d-40ad-9c6e-a61b2c825b66"/>
+				<textElement>
+					<font fontName="Times New Roman" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{doctorl5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="161" y="69" width="164" height="15" uuid="33151a6a-113f-46a5-806a-ead84b5309b2"/>
+				<textElement>
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{doctorl1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="161" y="81" width="164" height="15" uuid="c8be6ed8-978f-43e6-a7b4-6f6962305228"/>
+				<textElement>
+					<font fontName="Times New Roman" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{doctorl2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="373" y="118" width="164" height="15" uuid="1f168f76-7c09-4007-86ef-6dc621b76e15"/>
+				<textElement>
+					<font fontName="Times New Roman" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{doctorl_b5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="373" y="70" width="164" height="15" uuid="84e3ffc5-acd7-4e06-8533-ff6187dc127e"/>
+				<textElement>
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{doctorl_b1}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="47" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="12" y="2" width="546" height="42" uuid="3889d3a4-f8cd-404e-be2a-9676e8aabf67"/>
+				<textElement>
+					<font fontName="Calibri" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Note}.replace( '#', '\n' ).trim()]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

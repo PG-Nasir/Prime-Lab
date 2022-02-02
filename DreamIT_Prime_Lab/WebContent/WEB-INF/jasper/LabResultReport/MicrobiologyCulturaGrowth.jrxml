@@ -1,0 +1,1484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="595" pageHeight="842" columnWidth="550" leftMargin="25" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7a4abf3e-9754-4d2d-909c-7d740b05e407">
+	<property name="ireport.zoom" value="0.9330147604194693"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="LabNo" class="java.lang.String"/>
+	<field name="PatientName" class="java.lang.String"/>
+	<field name="Age" class="java.lang.String"/>
+	<field name="Gender" class="java.lang.String"/>
+	<field name="OrderDate" class="java.lang.String"/>
+	<field name="ReportingDate" class="java.lang.String"/>
+	<field name="MainTestName" class="java.lang.String"/>
+	<field name="Sample" class="java.lang.String"/>
+	<field name="Consultant" class="java.lang.String"/>
+	<field name="Degree" class="java.lang.String"/>
+	<field name="TestName" class="java.lang.String"/>
+	<field name="Result" class="java.lang.String"/>
+	<field name="NormalRange" class="java.lang.String"/>
+	<field name="TestList" class="java.lang.String"/>
+	<field name="Flag" class="java.lang.String"/>
+	<field name="LabIncharge" class="java.lang.String"/>
+	<field name="CheckedBy" class="java.lang.String"/>
+	<field name="LabInchargeDegree" class="java.lang.String"/>
+	<field name="CheckedByDegree" class="java.lang.String"/>
+	<field name="DoctorName1" class="java.lang.String"/>
+	<field name="DoctorName1Degree" class="java.lang.String"/>
+	<field name="DoctorName2" class="java.lang.String"/>
+	<field name="DoctorName2Degree" class="java.lang.String"/>
+	<field name="AmikacinA" class="java.lang.String"/>
+	<field name="AmikacinB" class="java.lang.String"/>
+	<field name="AmoxycillinA" class="java.lang.String"/>
+	<field name="AmoxycillinB" class="java.lang.String"/>
+	<field name="AmoxyClaveA" class="java.lang.String"/>
+	<field name="AmoxyClaveB" class="java.lang.String"/>
+	<field name="AzithromkyciA" class="java.lang.String"/>
+	<field name="AzithromkyciB" class="java.lang.String"/>
+	<field name="AztreonamA" class="java.lang.String"/>
+	<field name="AztreonamB" class="java.lang.String"/>
+	<field name="CefaclorA" class="java.lang.String"/>
+	<field name="CefaclorB" class="java.lang.String"/>
+	<field name="CefeprimeA" class="java.lang.String"/>
+	<field name="CefeprimeB" class="java.lang.String"/>
+	<field name="CefiximeA" class="java.lang.String"/>
+	<field name="CefiximeB" class="java.lang.String"/>
+	<field name="CefotazimeA" class="java.lang.String"/>
+	<field name="CefotazimeB" class="java.lang.String"/>
+	<field name="CefoxitinA" class="java.lang.String"/>
+	<field name="CefoxitinB" class="java.lang.String"/>
+	<field name="CeftaidimeA" class="java.lang.String"/>
+	<field name="CeftaidimeB" class="java.lang.String"/>
+	<field name="CeftraixoneA" class="java.lang.String"/>
+	<field name="CeftraixoneB" class="java.lang.String"/>
+	<field name="CefuroximeA" class="java.lang.String"/>
+	<field name="CefuroximeB" class="java.lang.String"/>
+	<field name="CephradineA" class="java.lang.String"/>
+	<field name="CephradineB" class="java.lang.String"/>
+	<field name="ChloramphenicolA" class="java.lang.String"/>
+	<field name="ChloramphenicolB" class="java.lang.String"/>
+	<field name="CloxacillinA" class="java.lang.String"/>
+	<field name="CloxacillinB" class="java.lang.String"/>
+	<field name="CiprofloxacinA" class="java.lang.String"/>
+	<field name="CiprofloxacinB" class="java.lang.String"/>
+	<field name="ColistinA" class="java.lang.String"/>
+	<field name="ColistinB" class="java.lang.String"/>
+	<field name="CoTrimoxazoleA" class="java.lang.String"/>
+	<field name="CoTrimoxazoleB" class="java.lang.String"/>
+	<field name="DoxkycyclineA" class="java.lang.String"/>
+	<field name="DoxkycyclineB" class="java.lang.String"/>
+	<field name="ErythromycinA" class="java.lang.String"/>
+	<field name="ErythromycinB" class="java.lang.String"/>
+	<field name="GentamicinA" class="java.lang.String"/>
+	<field name="GentamicinB" class="java.lang.String"/>
+	<field name="ImipenemA" class="java.lang.String"/>
+	<field name="ImipenemB" class="java.lang.String"/>
+	<field name="LevofloxacinA" class="java.lang.String"/>
+	<field name="LevofloxacinB" class="java.lang.String"/>
+	<field name="LinezolidA" class="java.lang.String"/>
+	<field name="LinezolidB" class="java.lang.String"/>
+	<field name="MecillinamA" class="java.lang.String"/>
+	<field name="MecillinamB" class="java.lang.String"/>
+	<field name="MeropenemA" class="java.lang.String"/>
+	<field name="MeropenemB" class="java.lang.String"/>
+	<field name="NalidixicA" class="java.lang.String"/>
+	<field name="NalidixicB" class="java.lang.String"/>
+	<field name="NeomycinA" class="java.lang.String"/>
+	<field name="NeomycinB" class="java.lang.String"/>
+	<field name="NetilmicinA" class="java.lang.String"/>
+	<field name="NetilmicinB" class="java.lang.String"/>
+	<field name="NitrofurantoinA" class="java.lang.String"/>
+	<field name="NitrofurantoinB" class="java.lang.String"/>
+	<field name="PenicillinA" class="java.lang.String"/>
+	<field name="PenicillinB" class="java.lang.String"/>
+	<field name="PiperacililnA" class="java.lang.String"/>
+	<field name="PiperacililnB" class="java.lang.String"/>
+	<field name="TazobactumA" class="java.lang.String"/>
+	<field name="TazobactumB" class="java.lang.String"/>
+	<field name="PolymyxinA" class="java.lang.String"/>
+	<field name="PolymyxinB" class="java.lang.String"/>
+	<field name="TetracyclineA" class="java.lang.String"/>
+	<field name="TetracyclineB" class="java.lang.String"/>
+	<field name="VancomycinA" class="java.lang.String"/>
+	<field name="VancomycinB" class="java.lang.String"/>
+	<field name="OrganismA" class="java.lang.String"/>
+	<field name="OrganismB" class="java.lang.String"/>
+	<field name="RegNo" class="java.lang.String"/>
+	<field name="CabinNo" class="java.lang.String"/>
+	<field name="Top" class="java.lang.Boolean"/>
+	<field name="Footer" class="java.lang.Boolean"/>
+	<field name="testName" class="java.lang.Boolean"/>
+	<field name="result" class="java.lang.Boolean"/>
+	<variable name="TestList" class="java.lang.String" calculation="Sum">
+		<variableExpression><![CDATA[$F{MainTestName}]]></variableExpression>
+		<initialValueExpression><![CDATA[]]></initialValueExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="247" splitType="Stretch">
+			<componentElement>
+				<reportElement x="413" y="106" width="150" height="15" uuid="53512dea-f38a-4f1f-a754-e5a3033c3e07"/>
+				<jr:Code39 xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" textPosition="none">
+					<jr:codeExpression><![CDATA[$F{LabNo}]]></jr:codeExpression>
+				</jr:Code39>
+			</componentElement>
+			<rectangle>
+				<reportElement x="4" y="123" width="540" height="65" uuid="71bd37ec-98a4-4400-9a19-0696354bace7"/>
+				<graphicElement>
+					<pen lineWidth="0.75" lineStyle="Dotted"/>
+				</graphicElement>
+			</rectangle>
+			<frame>
+				<reportElement mode="Transparent" x="13" y="125" width="542" height="63" uuid="ea050577-1a75-47bf-a405-69ddc6449c76"/>
+				<frame>
+					<reportElement positionType="Float" x="0" y="32" width="541" height="29" uuid="cb1f55b9-d4fb-4cad-9628-9cb0b8b9f44b"/>
+					<staticText>
+						<reportElement x="72" y="0" width="5" height="14" uuid="d72a4390-589f-46d4-99f8-cf25dcd18fce"/>
+						<textElement>
+							<font fontName="Calibri" size="9" isBold="false"/>
+						</textElement>
+						<text><![CDATA[:]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="0" y="1" width="72" height="14" uuid="92eae311-ad61-46af-92c5-f2480da0e371"/>
+						<textElement>
+							<font fontName="Calibri" size="9" isBold="false"/>
+						</textElement>
+						<text><![CDATA[Reffered By]]></text>
+					</staticText>
+					<textField isBlankWhenNull="true">
+						<reportElement x="77" y="0" width="454" height="14" uuid="83364168-168f-4bcf-a520-792765693989"/>
+						<textElement>
+							<font fontName="Calibri" isBold="true"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{Consultant}]]></textFieldExpression>
+					</textField>
+					<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+						<reportElement x="77" y="13" width="454" height="14" uuid="074f5e3b-dd49-43b2-9de1-3f6d98b4fc4b"/>
+						<textElement>
+							<font fontName="Calibri" size="9" isBold="false"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{Degree}.replace( '#', '\n' ).trim()]]></textFieldExpression>
+					</textField>
+				</frame>
+				<staticText>
+					<reportElement x="72" y="14" width="5" height="14" uuid="43c20148-d049-4443-8939-aa791324c7ad"/>
+					<textElement>
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="405" y="15" width="34" height="14" uuid="59569b0a-77f2-46a7-90aa-9e28baa84912"/>
+					<textElement textAlignment="Right">
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Gender]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="449" y="14" width="67" height="14" uuid="e4d38cbe-c9b9-4d45-a90c-52d6749f605d"/>
+					<textElement>
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{Gender}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="442" y="14" width="5" height="14" uuid="a57815ef-0149-427d-a475-ca570e587f4d"/>
+					<textElement>
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="314" y="14" width="36" height="14" uuid="37d156c4-3822-4e23-9ff2-a0b539dfcea0"/>
+					<textElement>
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{Age}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="308" y="15" width="4" height="14" uuid="9d4aac44-b0f9-4b15-9fd1-2710eb3e2423"/>
+					<textElement>
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="284" y="15" width="22" height="14" uuid="f03b9d71-626d-477d-97b9-d63974435386"/>
+					<textElement textAlignment="Right">
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Age]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="15" width="72" height="14" uuid="deca2c4d-eaf0-4fb2-b28d-f6c6e72d6784"/>
+					<textElement>
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Patient Name]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="79" y="15" width="201" height="14" uuid="f7405806-8786-4f81-abc0-110c6f5c9e56"/>
+					<textElement>
+						<font fontName="Calibri" size="10" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{PatientName}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="0" width="72" height="14" uuid="21fa27a9-2362-4053-98c7-8244d41760ba"/>
+					<textElement>
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Lab No]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="72" y="0" width="5" height="14" uuid="27870227-da0e-4ee0-a859-c3f40142d312"/>
+					<textElement>
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="382" y="1" width="57" height="14" uuid="9d632176-d85c-46dd-a0d7-f9bfef6b6706"/>
+					<textElement textAlignment="Right">
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Reporting Date]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="449" y="1" width="93" height="14" uuid="41092f2f-8f37-41e6-bcae-966a3c01ac8b"/>
+					<textElement>
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{ReportingDate}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="442" y="0" width="5" height="14" uuid="90ad68f6-6694-48f6-99e5-f3e5b92340dd"/>
+					<textElement>
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="79" y="0" width="139" height="14" uuid="b57908c0-b4c6-46eb-9829-dae3136268cd"/>
+					<textElement>
+						<font fontName="Calibri" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LabNo}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="314" y="1" width="61" height="14" uuid="ac98a4d0-90ed-4b74-86f0-0ae22d2648bb"/>
+					<textElement>
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{OrderDate}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="308" y="0" width="5" height="14" uuid="d7202a05-474b-4851-aa66-1ddaa4f1a20e"/>
+					<textElement>
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="262" y="0" width="44" height="14" uuid="997ec62e-c16d-42de-874b-b9ec458ab0e0"/>
+					<textElement textAlignment="Right">
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Order Date]]></text>
+				</staticText>
+			</frame>
+			<componentElement>
+				<reportElement x="5" y="106" width="150" height="15" uuid="17f3a39f-f75b-4aec-b386-2df5423c08c8"/>
+				<jr:Code39 xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" textPosition="none">
+					<jr:codeExpression><![CDATA[$F{LabNo}]]></jr:codeExpression>
+				</jr:Code39>
+			</componentElement>
+			<rectangle>
+				<reportElement x="4" y="202" width="539" height="14" uuid="0d4e5e3b-b4e0-4ed0-9480-83f2ce1686fd"/>
+				<graphicElement>
+					<pen lineWidth="0.75" lineStyle="Dotted"/>
+				</graphicElement>
+			</rectangle>
+			<frame>
+				<reportElement x="13" y="203" width="530" height="14" uuid="5ae80891-c486-4bde-9307-c41061c7c0b6"/>
+				<textField isBlankWhenNull="true">
+					<reportElement x="40" y="0" width="347" height="14" uuid="70360e11-39a0-4ef9-b52a-d231e5ede7fe"/>
+					<textElement verticalAlignment="Top">
+						<font fontName="Calibri" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{TestList}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="0" width="34" height="14" uuid="588a09f5-99a8-4e02-ae39-0a47ea8e795a"/>
+					<box leftPadding="2"/>
+					<textElement verticalAlignment="Top">
+						<font fontName="Calibri" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Tests]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="34" y="0" width="5" height="14" uuid="803e9f15-4ec7-4eea-8d48-56bac55fd040"/>
+					<textElement verticalAlignment="Top">
+						<font size="9" isBold="true"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+			</frame>
+			<staticText>
+				<reportElement x="0" y="225" width="550" height="14" uuid="b07dc2d8-9bae-4a9c-8039-1e143b58946c"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Estimations were carried out by Excbio Automated Haematology Analyzer & Verified Manually]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="128" y="102" width="281" height="18" uuid="6c9dd1cb-a424-41b2-a912-05a4222281b1"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MICROBIOLOGY REPORT]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="401" splitType="Stretch">
+			<printWhenExpression><![CDATA[$F{result}]]></printWhenExpression>
+			<staticText>
+				<reportElement x="149" y="53" width="213" height="21" uuid="0a8adbdd-60a4-43df-8533-f42861fc9c6a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="12" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Antibiogram Of Organism Isolated]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="93" width="110" height="15" uuid="0804beef-c2f7-4e87-96fa-4f4f38533af6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[ANTIBIOTIC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="118" y="80" width="49" height="15" uuid="8cee3146-b3aa-4ae3-b2ef-8159f4dcd9ad"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[PATTERN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="181" y="93" width="110" height="15" uuid="214a98df-9984-48d6-b1b9-7e927a04b25f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[ANTIBIOTIC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="79" width="48" height="15" uuid="943ca6c0-9426-4dcb-8432-7911aa506a35"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[PATTERN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="356" y="93" width="110" height="15" uuid="003f818f-5094-4e10-9bb0-f92b185f3bb7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[ANTIBIOTIC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="79" width="54" height="15" uuid="695170b3-f15b-4df2-8f81-9fb060ecca2f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[PATTERN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="109" width="110" height="13" uuid="bbfb8a79-d5a6-4bb0-980c-b2ea155abd21"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Amikacin01]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="126" width="110" height="13" uuid="a58f0ffc-ee71-4550-9347-e3ae23559cac"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Amoxycillin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="143" width="110" height="13" uuid="1451d2b4-001a-4554-9ac3-1e56a023f914"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Amoxycalve]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="160" width="110" height="13" uuid="5556ec54-5a41-405f-945b-a826b7acadfa"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Azithromycin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="176" width="110" height="13" uuid="607cb394-fd26-40a0-929a-77850958f346"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Aztreonam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="192" width="110" height="13" uuid="4dfad049-a637-46c1-bf6d-93928abe5f34"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Cefaclor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="208" width="110" height="13" uuid="fc6de6c2-ae35-4b4f-a22c-36480c5fd143"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Cefepime]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="224" width="110" height="13" uuid="7dd07c97-84c5-4c3c-9ee5-93ba040a94d2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Cefixime]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="241" width="110" height="13" uuid="c6e6c85f-f7ab-4300-aa60-581638013189"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Cefotaxime]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="257" width="110" height="13" uuid="e49bd642-1141-4414-91ee-2b77b89c882f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Cefoxitin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="273" width="110" height="13" uuid="00d4f3f7-fcb5-46ef-bda8-2356654458f9"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Ceftazidime]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="289" width="110" height="13" uuid="de4a414e-8902-4601-862d-c41f9046b08d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Ceftriaxone]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="305" width="110" height="13" uuid="039f324d-114a-423a-90c4-108d395785aa"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Cefuroxime]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="119" y="109" width="22" height="13" uuid="a459f2a1-1c8c-4e99-a50a-a66bff28abd6"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{AmikacinA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="145" y="109" width="22" height="13" uuid="2c0107b1-8746-480e-81a4-0a43427f9fa0"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{AmikacinB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="119" y="126" width="22" height="13" uuid="688f5ae9-f59e-4545-831c-b596aaa25a62"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{AmoxycillinA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="145" y="126" width="22" height="13" uuid="a75b8226-04cb-4457-b600-7387a7d66c25"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{AmoxycillinB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="119" y="143" width="22" height="13" uuid="220eb38a-365c-4c96-b4d9-410546a44c02"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{AmoxyClaveA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="145" y="143" width="22" height="13" uuid="ea255906-df09-46b5-9ec1-8f92c335e3fd"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{AmoxyClaveB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="119" y="160" width="22" height="13" uuid="4ae9d539-22cc-4b80-a7ea-725706ef8245"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{AzithromkyciA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="145" y="160" width="22" height="13" uuid="28354253-5f1e-4a2c-9b1e-94382eb1eee7"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{AzithromkyciB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="145" y="176" width="22" height="13" uuid="47894ccf-77b5-4bdf-ae80-5eae055a8128"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{AztreonamB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="119" y="176" width="22" height="13" uuid="9e055fea-d394-40ee-b6c9-1bed11772101"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{AztreonamA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="145" y="192" width="22" height="13" uuid="1eea6aad-b214-4d0d-811d-4e6e51a83190"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CefaclorB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="119" y="192" width="22" height="13" uuid="a012d53d-1661-47fc-946c-a128c2b305d4"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CefaclorA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="145" y="208" width="22" height="13" uuid="9c64c7c5-49eb-4ee6-b7b8-09c8b4b7609f"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CefeprimeB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="119" y="208" width="22" height="13" uuid="3f9510a2-ba4c-4158-a915-6989cb033235"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CefeprimeA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="119" y="224" width="22" height="13" uuid="8bdd29ec-b5c5-42d7-b045-41a5a37843bd"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CefiximeA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="145" y="224" width="22" height="13" uuid="d20dbb27-0de8-4dba-90d3-b1122c5ae1d9"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CefiximeB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="145" y="241" width="22" height="13" uuid="eb60cbd1-c645-45ba-b4ff-cc717e7f06cf"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CefotazimeB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="119" y="241" width="22" height="13" uuid="527f23df-a883-45dd-ba1b-47c82adfcddb"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CefotazimeA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="145" y="257" width="22" height="13" uuid="e4e4a856-21b4-4b5e-8f4b-fd23a7ff809d"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CefoxitinB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="119" y="257" width="22" height="13" uuid="03842173-3604-4460-bab2-6329b024d19b"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CefoxitinA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="145" y="273" width="22" height="13" uuid="d2393925-01dd-4a86-9b42-e72143dd8bfa"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CeftaidimeB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="119" y="273" width="22" height="13" uuid="bb084ee9-4eb2-415c-859f-de9ded5674a6"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CeftaidimeA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="119" y="289" width="22" height="13" uuid="9b620a7a-cc8f-4b63-bd62-7eca3b36765c"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CeftraixoneA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="145" y="289" width="22" height="13" uuid="d4c96bf8-9d9a-4be4-a478-8e1c9d20b34a"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CeftraixoneB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="145" y="305" width="22" height="13" uuid="d140a836-f021-4ccd-abe4-c9e72d3e11b3"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CefuroximeB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="119" y="305" width="22" height="13" uuid="6835d973-1eb3-41a5-ba8d-e14e93dbbcbd"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CefuroximeA}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="181" y="109" width="110" height="13" uuid="15a9158a-3148-428b-9481-8fb72c0acc7f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Cephradine]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="293" y="109" width="22" height="13" uuid="f3db4670-b9c0-4115-9e53-9413987746d9"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CephradineA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="319" y="109" width="22" height="13" uuid="afa07bc2-085e-466c-9a0d-99057fdce467"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CephradineB}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="181" y="126" width="110" height="13" uuid="0a0fd6ae-c610-406c-938e-05d2b2f52a5a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Chloramphenicol]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="181" y="143" width="110" height="13" uuid="31e1f445-5193-4434-b0ea-e6f674651b12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Cloxacillin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="181" y="160" width="110" height="13" uuid="5ad228ab-c481-433f-965f-f76365842278"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Ciprofloxacin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="181" y="176" width="110" height="13" uuid="f4b8f2f4-46f8-4768-88ea-ba95aea494f6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Colistin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="181" y="192" width="110" height="13" uuid="b91cb821-8ade-4bf1-92c5-58c9e096f5f6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Co-trimoxazole]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="181" y="208" width="110" height="13" uuid="aca61576-0118-4b1d-86d3-02257eb34b59"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Doxycycline]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="181" y="224" width="110" height="13" uuid="64849f86-5542-46f4-be36-e5aaa05f0e7c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Erythromycin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="181" y="241" width="110" height="13" uuid="07f44993-ba4b-4596-8f10-623a27eec6c6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Gentamicin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="181" y="257" width="110" height="13" uuid="4701ed42-39d4-4641-91fa-c7e5cc29f403"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Imipenem]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="181" y="273" width="110" height="13" uuid="605ac244-5096-4aa9-915a-cfeba360840a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Levofloxacin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="181" y="289" width="110" height="13" uuid="5ce8acfd-d44c-4a76-9246-101a39c633a9"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Linezolid]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="181" y="305" width="110" height="13" uuid="27b8dd6e-ec68-46eb-b3c9-cecadfc68091"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Mecillinam]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="293" y="126" width="22" height="13" uuid="1f3054a9-754c-4077-af3a-73b627a15b6a"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ChloramphenicolA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="319" y="126" width="22" height="13" uuid="62134878-1a73-48ee-a26b-1379e168fefd"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ChloramphenicolB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="293" y="143" width="22" height="13" uuid="0ca192b7-7d3f-4e9d-b88c-009e4a4e25ca"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CloxacillinA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="319" y="143" width="22" height="13" uuid="ae4f52a2-b67e-4723-aabb-36c799c18c74"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CloxacillinB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="319" y="160" width="22" height="13" uuid="ee5af396-967c-4fe1-8a56-1d72a7463071"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CiprofloxacinB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="293" y="160" width="22" height="13" uuid="ce9f7533-4379-4c6f-b05a-7e12e0039468"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CiprofloxacinA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="293" y="176" width="22" height="13" uuid="290045e7-8f2e-4398-b999-f0d7596ac148"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ColistinA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="319" y="176" width="22" height="13" uuid="f9ae18b8-6c06-418a-b2a6-07614aede478"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ColistinB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="293" y="192" width="22" height="13" uuid="7ec5986b-ecfe-4b3e-bccf-86d1d56ba4c4"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CoTrimoxazoleA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="319" y="192" width="22" height="13" uuid="8f30230a-c3ea-436d-82d5-0484ca00a693"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CoTrimoxazoleB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="319" y="208" width="22" height="13" uuid="a0bff13b-3faf-48e4-8424-2140630d0336"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DoxkycyclineB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="293" y="208" width="22" height="13" uuid="b5ddd44c-d98a-4d7f-8f2b-6a2e7ed57eb7"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DoxkycyclineA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="319" y="224" width="22" height="13" uuid="68ee13b2-b8ea-4d0a-a406-43eb02a8e753"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ErythromycinB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="293" y="224" width="22" height="13" uuid="ead82b23-0293-409b-820b-09e4ae8bfa44"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ErythromycinA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="293" y="241" width="22" height="13" uuid="e6591140-2437-45a0-8140-f18679961a84"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{GentamicinA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="319" y="241" width="22" height="13" uuid="de3469e6-e42f-4afc-8fed-97b435825d6f"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{GentamicinB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="293" y="257" width="22" height="13" uuid="33c705d8-2abc-452d-a011-3e54b5e155e7"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ImipenemA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="319" y="257" width="22" height="13" uuid="8bbba426-79b3-4ac9-b640-20cc07de3f63"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ImipenemB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="293" y="273" width="22" height="13" uuid="8ff8956a-aac1-4729-8db8-8800683ffaa6"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{LevofloxacinA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="319" y="273" width="22" height="13" uuid="9293b629-dd49-4810-8568-f3dbfd6fb7d8"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{LevofloxacinB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="319" y="289" width="22" height="13" uuid="f37770db-8827-4d23-8ffe-928b412cd30f"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{LinezolidB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="293" y="289" width="22" height="13" uuid="bc0c945a-4f64-4195-ac6f-37882eb2f659"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{LinezolidA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="293" y="305" width="22" height="13" uuid="36df7490-7088-427b-b12b-2a7a550decab"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MecillinamA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="319" y="305" width="22" height="13" uuid="e82b8ced-06d4-4252-ad13-912cb3c582ed"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MecillinamB}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="119" y="93" width="22" height="15" uuid="dc28cd52-bd41-4538-a0ac-7e2bf3385cb0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[A]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="145" y="93" width="23" height="15" uuid="66175991-816a-41a8-806a-3dea0d7ddc77"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[B]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="356" y="109" width="110" height="13" uuid="eae0fe14-e29a-4eae-b859-84b937bfb4f6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Meropenem]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="467" y="109" width="22" height="13" uuid="812374b7-24eb-4c76-80da-4f844853e874"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MeropenemA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="493" y="109" width="22" height="13" uuid="318ce8fc-6cde-4a4a-a258-001cd8b9698c"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MeropenemB}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="356" y="126" width="110" height="13" uuid="837ca596-cd2a-401b-868d-c48c0bfe1e33"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Nalidixic Acid]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="356" y="143" width="110" height="13" uuid="b18da37c-ab51-45bc-a28c-23d4077f89a5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Neomycin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="356" y="160" width="110" height="13" uuid="6ffa68e1-5d87-433b-a3ec-f21836ea1966"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Netilmicin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="356" y="176" width="110" height="13" uuid="a4dbb350-efe7-416c-8f08-e0f0405ae9eb"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Nitrofurantoin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="356" y="192" width="110" height="13" uuid="39055cb6-413a-4826-9e69-31d5b75bc647"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Penicillin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="356" y="208" width="110" height="13" uuid="6710ae63-3cf4-4815-807f-b1aef2ec92ca"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Piperacillin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="356" y="224" width="110" height="13" uuid="97958058-68ba-4b55-b346-90ac21a47a8f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Piperacillin/Tazobactum]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="356" y="241" width="110" height="13" uuid="fa64b620-4b69-484c-9e7e-f13dd9c9e089"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Polymyxin B]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="356" y="257" width="110" height="13" uuid="fa537558-2536-46fb-81c9-9e6764ecd5ff"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Tetracycline]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="356" y="273" width="110" height="13" uuid="d58f9cae-2c72-4330-bfcc-836a7dd1644c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Vancomycin]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="467" y="126" width="22" height="13" uuid="307d67e5-5ae1-4d06-955e-fb018ddf3c07"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NalidixicA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="493" y="126" width="22" height="13" uuid="c03fda3d-0360-4c1f-8b34-94820c441aa4"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NalidixicB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="493" y="143" width="22" height="13" uuid="d1ca6f34-6a8c-414f-be52-d1ce23684869"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NeomycinB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="467" y="143" width="22" height="13" uuid="5d814668-bcaa-4556-8a99-8821caa102cd"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NeomycinA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="493" y="160" width="22" height="13" uuid="556527c4-656c-46b9-ba45-10dc9bb57dbd"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NetilmicinB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="467" y="160" width="22" height="13" uuid="d0f8dd03-4479-429b-8a15-ac2a0e35f577"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NetilmicinA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="493" y="176" width="22" height="13" uuid="f5ad6fc8-88de-43d7-97bf-2f6a1a7d45f8"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NitrofurantoinB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="467" y="176" width="22" height="13" uuid="b4ce1b07-c988-4f77-9297-dcf4c4aaf47a"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NitrofurantoinA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="493" y="192" width="22" height="13" uuid="cbe01ece-415b-437d-ae85-8befe52a466f"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PenicillinB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="467" y="192" width="22" height="13" uuid="44860a7a-eaf2-4aa2-b40f-4b590ca6c028"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PenicillinA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="467" y="208" width="22" height="13" uuid="423208c4-818e-4909-a3d8-69b6dc14ee49"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PiperacililnA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="493" y="208" width="22" height="13" uuid="7258ebeb-d211-42df-8643-012bbabf6783"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PiperacililnB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="467" y="224" width="22" height="13" uuid="8dbfac94-39ff-4957-b5ef-c41ef41d0e47"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TazobactumA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="493" y="224" width="22" height="13" uuid="b0d14507-ed97-4167-94b3-178d6ed48865"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TazobactumB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="493" y="241" width="22" height="13" uuid="41287c2d-136c-4e4d-b29c-5acbcea2c5dc"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PolymyxinB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="467" y="241" width="22" height="13" uuid="ecc01a5a-44da-4525-ac44-95255b144aed"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PolymyxinA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="492" y="257" width="22" height="13" uuid="b2226661-c5b0-443b-9f15-ddb055095a9d"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TetracyclineB}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="466" y="257" width="22" height="13" uuid="49e798ec-6a33-4bef-8827-3b9394545a8a"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TetracyclineA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="466" y="273" width="22" height="13" uuid="75e247c2-54c5-42a2-99d0-c2a54e2d1f43"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{VancomycinA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="492" y="273" width="22" height="13" uuid="665e32f8-10ee-4d9b-a8d1-e6c7f4c25ba2"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{VancomycinB}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="293" y="95" width="22" height="15" uuid="723a489a-db03-4b3a-b61b-7f92a2076dce"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[A]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="318" y="95" width="23" height="15" uuid="73e9a5e6-ccda-4a30-8b08-26e375e3db60"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[B]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="492" y="93" width="23" height="15" uuid="692bea11-4ea1-4ddd-a4f4-20ebc825e2bb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[B]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="467" y="93" width="22" height="15" uuid="51dd5797-379c-43f8-8ded-669edd639154"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[A]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="13" y="5" width="537" height="30" uuid="b40b9223-1d68-4abe-b04e-68116d8fd2b0"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{OrganismA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="13" y="35" width="537" height="13" uuid="d6fec426-deb0-4108-8601-d077f4e94d3b"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{OrganismB}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="7" y="124" width="507" height="1" uuid="cbbc05a3-969b-4786-948e-9d30bbafd7e5"/>
+				<graphicElement>
+					<pen lineStyle="Dotted" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="7" y="140" width="507" height="1" uuid="1e49e377-6680-4fcf-be77-9ae54c6c7e12"/>
+				<graphicElement>
+					<pen lineStyle="Dotted" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="7" y="158" width="507" height="1" uuid="aea81deb-9b1b-4bdc-b009-541ff5a2a656"/>
+				<graphicElement>
+					<pen lineStyle="Dotted" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="7" y="174" width="507" height="1" uuid="2616bbcd-6fc7-458a-a107-0fb601a0d460"/>
+				<graphicElement>
+					<pen lineStyle="Dotted" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="7" y="189" width="507" height="1" uuid="3fe9fe72-295c-4f80-b5c0-a8d7f3ecb7c4"/>
+				<graphicElement>
+					<pen lineStyle="Dotted" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="7" y="205" width="507" height="1" uuid="ca48a495-d3c2-4802-9a71-af1941bd4b0b"/>
+				<graphicElement>
+					<pen lineStyle="Dotted" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="7" y="221" width="507" height="1" uuid="816ea6c6-7c42-49a7-911b-1638fc74b33b"/>
+				<graphicElement>
+					<pen lineStyle="Dotted" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="7" y="238" width="507" height="1" uuid="77649757-37d3-4de8-8d79-a9b6044b80cd"/>
+				<graphicElement>
+					<pen lineStyle="Dotted" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="7" y="254" width="507" height="1" uuid="d2313323-02bd-4a6c-bfe1-60fbc3d5109b"/>
+				<graphicElement>
+					<pen lineStyle="Dotted" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="7" y="270" width="507" height="1" uuid="6a6234fc-7448-44d5-ba6b-d0bc94fb5d81"/>
+				<graphicElement>
+					<pen lineStyle="Dotted" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="7" y="286" width="507" height="1" uuid="35810e4b-b106-450a-9543-aa23dd2e1ccf"/>
+				<graphicElement>
+					<pen lineStyle="Dotted" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="7" y="302" width="507" height="1" uuid="b97487e4-217e-4b90-bdae-d120d7bea0d6"/>
+				<graphicElement>
+					<pen lineStyle="Dotted" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="7" y="318" width="507" height="1" uuid="c08c7b15-9489-4d5d-b7b7-04a16a02132d"/>
+				<graphicElement>
+					<pen lineStyle="Dotted" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="6" y="79" width="508" height="1" uuid="5cf75d54-2629-4065-8a8a-79ea9633b249"/>
+				<graphicElement>
+					<pen lineStyle="Dotted" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="7" y="109" width="507" height="1" uuid="e946ef97-c67e-4f19-ba0e-443054c4e348"/>
+				<graphicElement>
+					<pen lineStyle="Dotted" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="112" y="79" width="1" height="240" uuid="d96a1d75-c447-4209-8f06-f35abefba8ad"/>
+				<graphicElement>
+					<pen lineStyle="Dotted" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="170" y="78" width="1" height="240" uuid="d744a76b-01bb-4e8a-bbec-207e19377ecd"/>
+				<graphicElement>
+					<pen lineStyle="Dotted" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="112" y="93" width="60" height="1" uuid="de3adf62-17f0-4399-bd79-c2f2398b9b01"/>
+				<graphicElement>
+					<pen lineStyle="Dotted" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="140" y="95" width="1" height="224" uuid="1989fc8a-087e-4f63-9d45-b4e8eaa762ad"/>
+				<graphicElement>
+					<pen lineStyle="Dotted" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="289" y="81" width="1" height="238" uuid="4a11509c-877a-4a61-a726-8fc46fd09cb9"/>
+				<graphicElement>
+					<pen lineStyle="Dotted" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="338" y="80" width="1" height="240" uuid="605ab6f5-351b-470e-96da-296366d77e37"/>
+				<graphicElement>
+					<pen lineStyle="Dotted" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="313" y="95" width="1" height="224" uuid="272e2715-3eaf-4525-9f46-77d2fb0d18f8"/>
+				<graphicElement>
+					<pen lineStyle="Dotted" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="290" y="93" width="48" height="1" uuid="15155673-314c-4917-8566-4212d3787dde"/>
+				<graphicElement>
+					<pen lineStyle="Dotted" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="460" y="80" width="1" height="240" uuid="ab91023f-4b8e-42e4-8b22-c83e17384506"/>
+				<graphicElement>
+					<pen lineStyle="Dotted" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="514" y="79" width="1" height="240" uuid="6aa99404-6b9e-4751-a1e1-7128606e6d5d"/>
+				<graphicElement>
+					<pen lineStyle="Dotted" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="486" y="94" width="1" height="225" uuid="2e505062-5c81-465e-b8f7-2c4e389b2377"/>
+				<graphicElement>
+					<pen lineStyle="Dotted" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="461" y="93" width="54" height="1" uuid="e76e0fa6-be4b-40b8-9827-eee28cb55382"/>
+				<graphicElement>
+					<pen lineStyle="Dotted" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="5" y="80" width="1" height="240" uuid="8a68bc21-0f98-48b7-869e-05906e24b246"/>
+				<graphicElement>
+					<pen lineStyle="Dotted" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="161" y="338" width="36" height="13" uuid="abf16d41-1890-4fd2-94ca-74ff7666a6de"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[S]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="161" y="366" width="36" height="13" uuid="72119329-b06c-4778-9ae3-e58c127c86d7"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[R]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="161" y="352" width="36" height="13" uuid="1cd16794-3274-4581-b624-8d29689f9e0c"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[M]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="197" y="338" width="8" height="13" uuid="7170e4d1-8e70-48a6-ab16-2ac22bde0b3c"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="197" y="366" width="8" height="13" uuid="15e846bc-9b9f-4937-9287-8af67a7836f9"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="197" y="352" width="8" height="13" uuid="878f9c38-df73-410b-a24c-a9f14d7328ce"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="221" y="338" width="162" height="13" uuid="5b673f1e-5221-48fb-926e-2a923134cd86"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Sensitive]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="221" y="366" width="162" height="13" uuid="3810d30a-ba52-40d5-a09e-c481f57eb79c"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Resistant]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="221" y="352" width="162" height="13" uuid="814b6eac-16f8-46ab-bc6d-354d57dd74c0"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Moderately Sensitive]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch">
+			<printWhenExpression><![CDATA[$F{result}]]></printWhenExpression>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch">
+			<printWhenExpression><![CDATA[$F{Footer}]]></printWhenExpression>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch">
+			<printWhenExpression><![CDATA[$F{result}]]></printWhenExpression>
+		</band>
+	</summary>
+</jasperReport>

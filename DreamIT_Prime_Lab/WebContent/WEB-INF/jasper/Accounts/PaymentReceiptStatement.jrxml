@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AccountsBookReport" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="502daa17-e309-4922-b2c0-b08a2c6a4691">
+	<property name="ireport.zoom" value="1.331000000000008"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="orgName" class="java.lang.String"/>
+	<parameter name="orgAddress" class="java.lang.String"/>
+	<parameter name="orgContract" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select '2020-12-23' as FromDate,'2020-12-23' as ToDate,a.ledgerTitle,ISNULL(a.openingBalance,'0') as openingBalance,a.reference,ISNULL((select ISNULL(sum(amount),0) from tbAccftransection where d_l_id=a.reference and date<'2020-12-23' and approve='1'),0)-ISNULL((select ISNULL(sum(amount),0) from tbAccftransection where c_l_id=a.reference and date<'2020-12-23' and approve='1'),0) as TransactionAmount,'1' as Type from tbAccfledger a where a.reference like '2-6%' UNION ALL select '2020-12-23' as FromDate,'2020-12-23' as ToDate,a.ledgerTitle,ISNULL(a.openingBalance,'0') as openingBalance,a.reference,ISNULL((select ISNULL(sum(amount),0) from tbAccftransection where d_l_id=a.reference and date between '2020-12-23' and '2020-12-23' and approve='1'),0) as TransactionAmount,'2' as Type from tbAccfledger a where a.reference like '2-6%'  UNION ALL  select '2020-12-23' as FromDate,'2020-12-23' as ToDate,a.ledgerTitle,ISNULL(a.openingBalance,'0') as openingBalance,a.reference,ISNULL((select ISNULL(sum(amount),0) from tbAccftransection where c_l_id=a.reference and date between '2020-12-23' and '2020-12-23' and approve='1'),0) as TransactionAmount,'3' as Type from tbAccfledger a where a.reference like '2-6%']]>
+	</queryString>
+	<field name="FromDate" class="java.util.Date"/>
+	<field name="ToDate" class="java.util.Date"/>
+	<field name="ledgerTitle" class="java.lang.String"/>
+	<field name="openingBalance" class="java.math.BigDecimal"/>
+	<field name="reference" class="java.lang.String"/>
+	<field name="TransactionAmount" class="java.math.BigDecimal"/>
+	<field name="Type" class="java.lang.String"/>
+	<variable name="gTotal" class="java.math.BigDecimal" resetType="Group" resetGroup="Type" calculation="Sum">
+		<variableExpression><![CDATA[$F{TransactionAmount}]]></variableExpression>
+	</variable>
+	<variable name="title" class="java.lang.String">
+		<variableExpression><![CDATA[]]></variableExpression>
+		<initialValueExpression><![CDATA[$F{Type}.equals("1")?"CASH & CASH EQUIVALENTS:":""]]></initialValueExpression>
+	</variable>
+	<variable name="TotalDebit" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[($F{Type}.equals("1") || $F{Type}.equals("2"))?$F{TransactionAmount}:0]]></variableExpression>
+	</variable>
+	<variable name="TotalCredit" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$F{Type}.equals("3")?$F{TransactionAmount}:0]]></variableExpression>
+	</variable>
+	<variable name="TotalGrand" class="java.math.BigDecimal">
+		<variableExpression><![CDATA[$V{TotalDebit}-$V{TotalCredit}]]></variableExpression>
+	</variable>
+	<group name="Type">
+		<groupExpression><![CDATA[$F{Type}]]></groupExpression>
+		<groupHeader>
+			<band height="33">
+				<textField>
+					<reportElement x="1" y="1" width="140" height="13" uuid="d1819897-8847-4e73-87dc-61f230c99c6d"/>
+					<box leftPadding="2"/>
+					<textElement>
+						<font isBold="true" isUnderline="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{Type}.equals("1")?"Opening Balance :":$F{Type}.equals("2")?"Receipt :":"Payment :"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="1" y="14" width="303" height="14" uuid="9bca7622-df3b-459b-b416-db267f7e93b5"/>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{title}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="14">
+				<textField pattern="#,##0.00">
+					<reportElement x="408" y="0" width="145" height="13" uuid="03788d5a-5ac7-4fe9-ac5b-748aea90f6f1"/>
+					<textElement textAlignment="Right">
+						<font isUnderline="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{gTotal}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="86" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="0" y="23" width="555" height="12" uuid="e0beb974-8156-4510-8544-fcedf08161d1"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{orgAddress}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="10" width="555" height="16" uuid="ff67b520-057a-4819-ad7b-8e2117b0a432"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{orgName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="0" y="35" width="555" height="11" uuid="663e13ac-d1ac-4829-ac66-5519197b702c"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{orgContract}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="48" width="554" height="16" uuid="dc9ea005-05a6-4905-8c24-7416bfc89a3e"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Payment Receipt Statement]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="493" y="72" width="60" height="13" uuid="3c159367-98e2-4866-8619-223af89d60cb"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{ToDate}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="410" y="72" width="65" height="13" uuid="ddf9daa3-2333-4f08-95e1-686e23b17745"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{FromDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="372" y="72" width="38" height="13" uuid="c849082d-793e-4812-870a-a7c3813247f6"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["From"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="476" y="72" width="16" height="13" uuid="f8c6cb06-9072-4ec4-add2-fbfc94f36671"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["To"]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="18" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="-1" width="555" height="1" uuid="f3d7f90c-fd98-491f-a453-288ef1042bab"/>
+			</line>
+			<line>
+				<reportElement x="0" y="0" width="1" height="17" uuid="82eef679-aeaf-4a48-bd76-ba7d5caff4c5"/>
+			</line>
+			<line>
+				<reportElement x="1" y="17" width="554" height="1" uuid="87c3cc7d-fbe6-43cf-a4cb-c31f355e495c"/>
+			</line>
+			<line>
+				<reportElement x="407" y="-1" width="1" height="18" uuid="e1410503-635a-44c2-b743-b62eb146224c"/>
+			</line>
+			<line>
+				<reportElement x="554" y="0" width="1" height="17" uuid="a708b712-6bcf-46e8-b533-e4e2a41ce072"/>
+			</line>
+			<staticText>
+				<reportElement x="1" y="0" width="405" height="17" uuid="63b6b124-46dc-4762-b4a0-c919596c1ca8"/>
+				<box leftPadding="2"/>
+				<text><![CDATA[Particular]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="408" y="0" width="146" height="17" uuid="5d83db7d-5682-4e6f-961a-87e4d3440c72"/>
+				<box rightPadding="2"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[Amount]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="17" splitType="Stretch">
+			<textField pattern="#,##0.00">
+				<reportElement x="408" y="0" width="145" height="14" uuid="44bf5527-92c9-4b69-9c17-8c91ab2f35c8"/>
+				<box rightPadding="2"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{TransactionAmount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="0" width="405" height="14" uuid="0ac5e526-c6c8-4dc9-b296-f873f33ec322"/>
+				<box leftPadding="2"/>
+				<textFieldExpression><![CDATA[$F{ledgerTitle}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="30" splitType="Stretch">
+			<textField evaluationTime="Report">
+				<reportElement x="294" y="12" width="40" height="13" uuid="714342a2-6139-4800-b31f-1870fee80517"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="214" y="12" width="80" height="13" uuid="076cf710-0499-44dd-8680-007f9ed5c676"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="8" y="11" width="158" height="13" uuid="b163ffad-c093-4000-ace0-3a017feb495a"/>
+				<text><![CDATA[Developed By-Dream IT]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy h.mm a">
+				<reportElement x="454" y="12" width="100" height="13" uuid="86a289f4-bf02-40f3-b140-fa8624d156bb"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="377" y="12" width="73" height="13" uuid="9706c84f-4adb-4a2f-b40d-93e0655be38d"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[Print Time]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement x="1" y="-1" width="541" height="17" uuid="85849957-c158-4274-a350-7644db749639"/>
+				<box leftPadding="2"/>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[CLOSING BALANCE:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="17" width="359" height="17" uuid="370fff83-18bc-44cc-a513-1480044488c9"/>
+				<box leftPadding="2"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[CASH & CASH EQUIVALENTS:]]></text>
+			</staticText>
+			<textField pattern="#,##0.00">
+				<reportElement x="410" y="17" width="143" height="14" uuid="0a891ef8-0148-4451-a0fe-6075af17f858"/>
+				<textElement textAlignment="Right">
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{TotalGrand}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BercodePrint" language="groovy" pageWidth="108" pageHeight="72" columnWidth="101" leftMargin="4" rightMargin="3" topMargin="5" bottomMargin="3" uuid="6fb09caf-4778-41f2-b4b7-1afa9d152507">
+	<property name="ireport.zoom" value="3.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select CONCAT(FiscalYear,'00',labId) as LabNo,testName,(select patientname from TbLabPatient where labId=a.labId and FiscalYear=a.FiscalYear) as PatientName from TbLabTestHistory a where a.labId='2' and a.FiscalYear='2020' and a.type='1']]>
+	</queryString>
+	<field name="LabNo" class="java.lang.String"/>
+	<field name="testName" class="java.lang.String"/>
+	<field name="PatientName" class="java.lang.String"/>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<detail>
+		<band height="50">
+			<textField>
+				<reportElement x="23" y="35" width="100" height="9" uuid="2876ec93-9e28-46a2-a0f5-b13f3982944c"/>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{testName}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="12" y="0" width="96" height="36" uuid="9d7a63b3-0a43-4305-ace0-2e10f5a4404a"/>
+				<jr:Interleaved2Of5 xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" textPosition="bottom" displayChecksum="false">
+					<jr:codeExpression><![CDATA[$F{LabNo}]]></jr:codeExpression>
+				</jr:Interleaved2Of5>
+			</componentElement>
+			<textField>
+				<reportElement x="23" y="41" width="100" height="9" uuid="bc99ec98-1a38-4b3d-8ed7-ef51b2297883"/>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PatientName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

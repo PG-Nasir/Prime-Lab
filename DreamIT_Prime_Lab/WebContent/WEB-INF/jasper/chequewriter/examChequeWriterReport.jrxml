@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AssetDetails" language="groovy" pageWidth="540" pageHeight="252" columnWidth="515" leftMargin="20" rightMargin="5" topMargin="20" bottomMargin="20" uuid="b9eaf638-b977-4e00-871e-ce2a3e2f8ec5">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="sql" class="java.lang.String">
+		<defaultValueExpression><![CDATA["select (select dbo.number((a.Amount),1)) as Taka,WriterId,(select BankName from TbBankName where BankId=a.BankId) as BankName,a.PayTo,a.Amount,a.Date,Type,a.Entrytime,a.UserId,(select fullname from  Tblogin where id=a.userId) as Username from TbChequeWriter a where a.WriterId='5'"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[$P!{sql}]]>
+	</queryString>
+	<field name="Taka" class="java.lang.String"/>
+	<field name="WriterId" class="java.lang.Integer"/>
+	<field name="BankName" class="java.lang.String"/>
+	<field name="PayTo" class="java.lang.String"/>
+	<field name="Amount" class="java.math.BigDecimal"/>
+	<field name="Date" class="java.lang.String"/>
+	<field name="Type" class="java.lang.String"/>
+	<field name="Entrytime" class="java.sql.Timestamp"/>
+	<field name="UserId" class="java.lang.Integer"/>
+	<field name="Username" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="150" splitType="Stretch">
+			<textField>
+				<reportElement x="203" y="74" width="290" height="14" uuid="b207e7ad-2ec3-4069-8e37-34a9c1194a62"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PayTo}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="408" y="49" width="105" height="14" uuid="d3b71cd7-9559-4fcb-ae27-182dd68c86e7"/>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Date}.replaceAll('-','').replaceAll('','   ')]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00">
+				<reportElement x="417" y="97" width="65" height="20" uuid="5df639ce-e7bb-4953-96d9-a95c55e0c53e"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Amount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="91" width="161" height="38" uuid="8053d89e-aa9a-4edc-b526-87a0d9b9ec18"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Taka}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="157" y="4" width="137" height="74" uuid="f0722a51-3195-4d76-8b28-827f16dc980a">
+					<printWhenExpression><![CDATA[$F{Type}.equals("2")?true:false]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["C:\\Users\\Falcon-9\\Desktop\\acpayee.png"]]></imageExpression>
+			</image>
+		</band>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
